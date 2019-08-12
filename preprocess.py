@@ -1,7 +1,3 @@
-'''
-Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml
-'''
-
 from __future__ import print_function
 
 from music21 import *
@@ -106,6 +102,9 @@ def __parse_midi(data_fn):
 
     return measures, chords
 
+'''
+Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml
+'''
 ''' Helper function to get the grammatical data from given musical data. '''
 def __get_abstract_grammars(measures, chords):
     # extract grammars

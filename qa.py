@@ -1,6 +1,3 @@
-'''
-Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml 
-'''
 from itertools import zip_longest
 import random
 
@@ -45,7 +42,9 @@ def prune_grammar(curr_grammar):
     pruned_grammar = ' '.join(pruned_grammar)
 
     return pruned_grammar
-
+'''
+Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml 
+'''
 ''' Remove repeated notes, and notes that are too close together. '''
 def prune_notes(curr_notes):
     for n1, n2 in __grouper(curr_notes, n=2):

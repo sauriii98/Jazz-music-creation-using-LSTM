@@ -1,7 +1,3 @@
-'''
-Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml
-'''
-
 from music_utils import * 
 from preprocess import * 
 from keras.utils import to_categorical
@@ -58,7 +54,7 @@ def generate_music(inference_model, corpus = corpus, abstract_grammars = abstrac
         
         # Loop over the chords of the current set of chords
         for j in chords[i]:
-            # Add chord to the current chords with the adequate offset, no need to understand this
+            # Add chord to the current chords with the adequate offset
             curr_chords.insert((j.offset % 4), j)
         
         # Generate a sequence of tones using the model
@@ -115,6 +111,9 @@ def generate_music(inference_model, corpus = corpus, abstract_grammars = abstrac
     
     return out_stream
 
+'''
+Code adapted from Evan Chow's jazzml, https://github.com/evancchow/jazzml
+'''
 
 def predict_and_sample(inference_model, x_initializer = x_initializer, a_initializer = a_initializer, 
                        c_initializer = c_initializer):

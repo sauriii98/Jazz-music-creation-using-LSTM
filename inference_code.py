@@ -24,7 +24,7 @@ def inference_model(LSTM_cell, densor, n_x = 78, n_a = 64, Ty = 100):
     x = x0
 
     
-    # Step 1: Create an empty list of "outputs" to later store your predicted values
+    # Step 1: Create an empty list of "outputs" to later store the predicted values
     outputs = []
     
     # Step 2: Loop over Ty and generate a value at every time step
@@ -39,7 +39,7 @@ def inference_model(LSTM_cell, densor, n_x = 78, n_a = 64, Ty = 100):
         # Step 2.C: Append the prediction "out" to "outputs" 
         outputs.append(out)
         
-        # Step 2.D: Set the prediction "out" to be the next input "x". You will need to use RepeatVector(1).
+        # Step 2.D: Set the prediction "out" to be the next input "x".
         x = RepeatVector(1)(out)
         
     # Step 3: Create model instance with the correct "inputs" and "outputs" 
