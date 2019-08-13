@@ -1,6 +1,6 @@
 # Jazz-music-creation-using-LSTM
 
-## It includes the implementation of LSTM algorithm for generation of Jazz music
+## Problem Statement: We would like to create a jazz music piece. However, we don't know any instruments or music composition. Fortunately, we know deep learning and will solve this problem using an LSTM network.
 ## - Projects contains following files:
 ### - Data
   - It contains the data that is used to trained the model (i.e music snippets).
