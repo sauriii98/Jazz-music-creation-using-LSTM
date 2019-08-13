@@ -1,17 +1,17 @@
 # Jazz-music-creation-using-LSTM
 
-## It inludes the implementation of LSTM algorithm for generation of Jazz music
-## Projects contains following files:
-### Data
+## It includes the implementation of LSTM algorithm for generation of Jazz music
+## - Projects contains following files:
+### - Data
   - It contains the data that is used to trained the model (i.e music snippets).
 
-### images
+### - images
   - It contains images used in "Impovise a Jazz Solo with an LSTM Network" notebook for explaination.
 
-### output
+### - output
   - It contains the final output music snippet created by this algorithm.
 
-### Impovise a Jazz Solo with an LSTM Network
+### - Impovise a Jazz Solo with an LSTM Network
   - It is the main file which contains the complete flow of the algorithm.
   - It contains following sections:
     1. Problem Statement
@@ -23,14 +23,14 @@
       3.2. Generate music
     4. References
       
-### data_supporting_func.py
+### - data_supporting_func.py
   - It contains the functions related to data processing
   - Functions are:
     * `load_music_utils`
     * `generate_music`
     * `predict_and_sample`
 
-### grammar.py
+### - grammar.py
   - It contains functions to process the music
   - Functions are:
     * `__is_scale_tone`
@@ -42,17 +42,17 @@
     * `__generate_arbitrary_tone`
     * `parse_melody`
     * `unparse_grammar`
-### inference_code.py
+### - inference_code.py
   - It contains the functions related to inference algorithm
   - Functions are:
     * `inference_model`
 
-### midi.py
+### - midi.py
   - It contains script used to converts MIDI files to WAV and optionally to MP3 using ffmpeg.
   - Functions are:
     * `play_music`
 
-### music_supporting_func.py
+### - music_supporting_func.py
   - It contains the functions to preprocess the data.
   - Functions are:
     * `data_processing`
@@ -60,7 +60,7 @@
     * `sequence_to_matrix`
     * `one_hot`
     
-### preprocess.py
+### - preprocess.py
   - It contains the functions which are used to process the music.
   - Functions are:
     * `__parse_midi`
@@ -68,7 +68,7 @@
     * `get_musical_data`
     * `get_corpus_data`
 
-### qa.py
+### - qa.py
   - It contains the functions which are used to postprocess the music.
   - functions are:
     * `__roundDown`
