@@ -15,12 +15,12 @@
   - It is the main file which contains the complete flow of the algorithm.
   - It contains following sections:
     1. Problem Statement
-      - Dataset
-      - Overview of the model
+        - Dataset
+        - Overview of the model
     2. Building the model
     3. Generating a music
-      - Predicting and Sampling
-      - Generate music
+        - Predicting and Sampling
+        - Generate music
     4. References
       
 ### - data_supporting_func.py
